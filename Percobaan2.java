@@ -20,8 +20,15 @@ public class Percobaan2 {
         System.out.print("Pangkat: ");
         pangkat = sc.nextInt();
 
-        System.out.println(hitungPangkat(bilangan, pangkat));
-        
+        System.out.print("Deret perhitungan: ");
+        for (int i = 0; i < pangkat; i++) {
+            System.out.print(bilangan + (i < pangkat - 1 ? "x" : ""));
+        }
+        System.out.print("x1"); 
+
+        int hasil = hitungPangkat(bilangan, pangkat);
+        System.out.println(" = " + hasil);
+
         sc.close();
     }
 }
